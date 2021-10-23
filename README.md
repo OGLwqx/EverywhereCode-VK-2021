@@ -1,2 +1,6 @@
-# EverywhereCode-VK-2021
-Project special for VK
+# Вездекод ВКонтакте
+> Задание 2 и 3 | VK Mini Apps
+
+Команда "b3bra"
+
+
