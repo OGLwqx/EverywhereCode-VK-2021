@@ -55,6 +55,14 @@ class App extends React.Component {
         Platform: VKCOM
       })
     }
+    if (parsedUrl.searchParams.get('vk_platform') === null) {
+      this.setState({ 
+        isDesktop: true,
+        hasHeader: false,
+        Platform: VKCOM
+      })
+    }
+    console.log(parsedUrl.searchParams.get('vk_platform'))
 
     bridge.send("VKWebAppInit");
     bridge.send("VKWebAppGetUserInfo");
