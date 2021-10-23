@@ -3,4 +3,4 @@
 
 Команда "b3bra"
 
-
+![per sick](https://raw.githubusercontent.com/OGLwqx/EverywhereCode-VK-2021/main/src/img/persik.png)
