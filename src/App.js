@@ -87,6 +87,13 @@ class App extends React.Component {
 		
 	};
 
+  openLink = url => {
+    const link = document.createElement('a')
+    link.href = url
+    link.setAttribute('target', '_blank')
+    link.click()
+  };
+
 	render() {
     const { isDesktop, hasHeader, Platform } = this.state
 
@@ -118,7 +125,7 @@ class App extends React.Component {
                   ><Icon28Users3Outline/></TabbarItem>
                 </Tabbar>}>
                   <View id="home" activePanel="home" popout={this.state.popout}>
-          <Home id='home' state={this.state} go={this.go}/>
+          <Home id='home' state={this.state} go={this.go} openLink={this.openLink}/>
           </View>
           <View id="persik" activePanel="persik" popout={this.state.popout}>
           <Persik id='persik' go={this.go} state={this.state} />
